@@ -8,26 +8,51 @@
 </head>
 <body>
 
-    <h1>Você me ama?</h1>
+    <h1>Quanto você me ama?</h1>
 
-    <button class="botaoRomantico" onclick="iniciarMusicaERedirecionar()">Sim!</button>
+    <button class="botaoRomantico" onclick="redirecionarDois()"> 
+        <img src="botao.png"> 
+        <span class="textoBotao">20%<span>
+    </button>
 
-    <audio loop id="musicaRomantica">
-    <source src="musica_do_luan_santana.mp3" type="audio/mpeg">
-    </audio>
+    <br>
+
+    <button class="botaoRomantico" onclick="redirecionarDois()"> 
+        <img src="botao.png"> 
+        <span class="textoBotao">40%<span>
+    </button>
+
+    <br>
+
+    <button class="botaoRomantico" onclick="redirecionarDois()"> 
+        <img src="botao.png"> 
+        <span class="textoBotao">60%<span>
+    </button>
+
+    <br>
+
+    <button class="botaoRomantico" onclick="redirecionarDois()"> 
+        <img src="botao.png"> 
+        <span class="textoBotao">80%<span>
+    </button>
+
+    <br>
+
+    <button class="botaoRomantico" onclick="redirecionarUm()"> 
+        <img src="botao.png"> 
+        <span class="textoBotao">100%<span>
+    </button>
 
     <script>
-    function iniciarMusicaERedirecionar() {
-      const musica = document.getElementById("musicaRomantica");
-      musica.play().then(() => {
-        // Sucesso ao iniciar a música
+
+    function redirecionarUm() {
         window.location.href = "melhor_casal_do_mundo.html"; 
-        console.log("a música começou a tocar")
-      }).catch((error) => {
-        alert("O navegador bloqueou a reprodução automática da música.");
-        console.error(error);
-      });
     }
+
+    function redirecionarDois() {
+        window.location.href = "pagina_errada.html"; 
+    }
+
   </script>
 </body>
 </html>
