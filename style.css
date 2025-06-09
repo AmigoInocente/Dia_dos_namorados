@@ -55,3 +55,21 @@ audio {
     color: white;
     
 }
+
+.heart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 2rem;
+    animation: fall linear forwards;
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+        opacity: 0;
+    }
+}
